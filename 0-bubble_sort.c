@@ -1,24 +1,24 @@
 #include "sort.h"
 /**
- * bubble_sort - sort array lements from min to max value
+ * bubble_sort - sort array elements
  * @array: array
  * @size: array size
+ * Return : Void
  */
 void bubble_sort(int *array, size_t size)
 {
-
-	size_t i, index, tmp = 0;
+	size_t i, idx, temp = 0;
 
 	if (size < 2)
 		return;
 	for (i = 0; i < size; i++)
-		for (index = 0; index < size; index++)
+		for (idx = 0; idx < size; idx++)
 		{
-			if (array[index] > array[index + 1] && array[index + 1])
+			if (array[idx] > array[idx + 1] && array[idx + 1])
 			{
-			tmp = array[index];
-			array[index] = array[index + 1];
-			array[index + 1] = tmp;
+			temp = array[idx];
+			array[idx] = array[idx + 1];
+			array[idx + 1] = temp;
 			print_array(array, size);
 			}
 		}
