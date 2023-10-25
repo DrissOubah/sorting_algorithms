@@ -1,5 +1,4 @@
 #include "sort.h"
-#include <stdio.h>
 
 /**
  * bubble_sort - Sorts an array of integers
@@ -7,6 +6,7 @@
  *
  * @array: The array to be sortty.
  * @size: The size of the array.
+ * Return : void
  */
 void bubble_sort(int *array, size_t size)
 {
